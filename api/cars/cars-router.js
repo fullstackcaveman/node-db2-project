@@ -21,4 +21,18 @@ router.get('/', async (req, res, next) => {
 		});
 });
 
+router.get('/:id', (req, res) => {
+	const id = req.params.id;
+
+	db('cars')
+		.where({ id })
+		.first()
+		.then((car) => {
+			res.json(car);
+		})
+		.catch(() => {
+			res.status(500).json({ message: 'Failed to retrieve car' });
+		});
+});
+
 module.exports = router;
