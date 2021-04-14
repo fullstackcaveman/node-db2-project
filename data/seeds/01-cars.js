@@ -5,7 +5,7 @@ exports.seed = function (knex) {
 		.then(function () {
 			return knex('cars').insert([
 				{
-					vin: '11111111111111111',
+					vin: '12121212121212121',
 					make: 'toyota',
 					model: 'prius',
 					mileage: 250000,
@@ -13,7 +13,7 @@ exports.seed = function (knex) {
 					transmission: 'CVT',
 				},
 				{
-					vin: '22222222222222222',
+					vin: '23232323232323232',
 					make: 'ford',
 					model: 'mustang',
 					mileage: 120000,
@@ -21,7 +21,7 @@ exports.seed = function (knex) {
 					transmission: 'manual',
 				},
 				{
-					vin: '33333333333333333',
+					vin: '34343434343434343',
 					make: 'honda',
 					model: 'accord',
 					mileage: 220000,
