@@ -20,10 +20,10 @@ There are two possible ways to submit your project. Your instructor should have 
 
 #### Option B - Pull Request
 
-- [ ] Fork and clone the repository.
-- [ ] Implement your project in a `firstname-lastname` branch.
-- [ ] Create a pull request of `firstname-lastname` against your `main` branch.
-- [ ] Open the assignment in Canvas and submit your pull request.
+- [x] Fork and clone the repository.
+- [x] Implement your project in a `firstname-lastname` branch.
+- [x] Create a pull request of `firstname-lastname` against your `main` branch.
+- [x] Open the assignment in Canvas and submit your pull request.
 
 ### Task 2: Minimum Viable Product
 
@@ -57,7 +57,7 @@ The critical information for each car is the vin, make, model, and mileage. They
 
   - `checkCarId` returns a status 404 with a `{ message: "car with id <car id> is not found" }` if the id in `req.params` does not exist in the database.
 
-  - `checkCarPayload` returns a status 400 with a `{ message: "<field name> is missing" }` if any required field is missing.
+  [x] `checkCarPayload` returns a status 400 with a `{ message: "<field name> is missing" }` if any required field is missing.
 
   - `checkVinNumberValid` returns a status 400 with a `{ message: "vin <vin number> is invalid" }` if the vin number is [invalid](https://www.npmjs.com/package/vin-validator).
 
